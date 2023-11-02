@@ -8,7 +8,7 @@ from time import sleep, perf_counter
 import os
 
 # Variables
-SENTENCE = 'This is an example of a \'Hello World\' Programm.'  # Sentence to print, watch for right quotation marks
+SENTENCE = 'This is an example of a \'Hello World\' programm.'  # Sentence to print, watch for right quotation marks
 TRIES = 0  # Counts the number of loops it takes to print the sentence
 SLEEP_TIME = 0.02  # Time between each loop, set to 0.02 for best visibility in console
 # List of characters to print the sentence with
@@ -44,6 +44,7 @@ def super_duper_printer(words='Hello World!', char_list=None, tries=0):
     for char in words_list:
         # Loop through chars in char_list to find matching char
         for i in char_list:
+            # Clear console and print the previous chars plus the current try from char_list
             os.system('cls')
             print(previous + i)
             tries += 1

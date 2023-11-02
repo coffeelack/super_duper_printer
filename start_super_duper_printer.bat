@@ -1,2 +1,2 @@
 @echo off
-pythonw.exe super_duper_printer.py
+python.exe super_duper_printer.py

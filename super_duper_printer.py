@@ -1,3 +1,4 @@
+#!python3
 """
 This program prints a given word letter by letter with a given list of characters.
 It can be used to test the performance of different lists of characters.

@@ -46,7 +46,11 @@ def super_duper_printer(words='Hello World!', char_list=None, tries=0):
         # Loop through chars in char_list to find matching char
         for i in char_list:
             # Clear console and print the previous chars plus the current try from char_list
-            os.system('cls')
+            # If os is not windows, change 'cls' else 'clear'
+            if os.name != 'nt':
+                os.system('clear')
+            else:
+                os.system('cls')
             print(previous + i)
             tries += 1
             sleep(SLEEP_TIME)
